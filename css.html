@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+<header class="w3-container w3-half w3-padding-64 w3-center" style="font-weight: bold;">
+  <h1>Miejsca na świecie, które warto zobaczyć</h1> 
+</header>
+  <div class="w3-container w3-half w3-padding-64 w3-right">
+  	<ul class="w3-navbar w3-blue-grey">
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink w3-green" onclick="openCity(event, 'London');">Londyn</a></li>
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris');">Paryż</a></li>
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo');">Tokio</a></li>
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Czarnogora');">Czarnogóra</a></li>
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Ateny');">Ateny</a></li>
+    <li style="width:16.66%"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Madryt');">Madryt</a></li>
+  	</ul>
+    <div id="London" class="w3-container w3-border city"></div>
+    <div id="Paris" class="w3-container w3-border city" style="display:none"></div>
+    <div id="Tokyo" class="w3-container w3-border city" style="display:none"></div>
+    <div id="Czarnogora" class="w3-container w3-border city" style="display:none"></div>
+    <div id="Ateny" class="w3-container w3-border city" style="display:none"></div>
+    <div id="Madryt" class="w3-container w3-border city" style="display:none"></div>
+    </div>
+  </div>
+
+<div class="w3-container">
+  <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Londyn</h3>
+       </div>
+      <img src="londyn.jpg" alt="Londyn" style="width:80%">
+      <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+      </div>
+  	</div>
+  </div>
+
+    <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Paryż</h3>
+       </div>
+      <img src="paryz.jpg" alt="Paryz" style="width:80%">
+      <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+      </div>
+  	</div>
+  </div>
+
+    <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Tokio</h3>
+       </div>
+      <img src="tokyo.jpg" alt="Tokyo" style="width:80%">
+      <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+      </div>
+  	</div>
+  </div></div>
+<div class="w3-container w3-white" style="height: 50px;"></div>
+  <div class="w3-container">
+  <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Czarnogóra</h3>
+       </div>
+      <img src="czarnogora.jpg" alt="Czarnogóra" style="width:80%">
+    <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+    </div>
+  	</div>
+  </div>
+
+    <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Ateny</h3>
+       </div>
+      <img src="ateny.jpg" alt="Ateny" style="width:80%">
+      <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+      </div>
+  	</div>
+  </div>
+
+    <div class="w3-third w3-row-padding">
+  	<div class="w3-dark-grey w3-center" style="width:90%">
+  	   <div class="w3-green w3-half w3-right" style="padding: 3px; margin: 0; padding: 0;">
+           <h3>Madryt</h3>
+       </div>
+      <img src="madryt.jpg" alt="Madryt" style="width:80%">
+      <div class="w3-section">
+        <button class="w3-btn w3-green">Więcej</button>
+      </div>
+  	</div>
+  </div></div>
+
+<div class="w3-container w3-white" style="height: 80px;"></div>
+<footer class="w3-container w3-dark-grey" style="display: block; padding: 3px; font-size: 10px; font-weight: bold; text-align: center; color: white;">
+  <p>Anna Karolczak</p>
+</footer>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-green";
+}
+</script>
+</body>
+</html>     
